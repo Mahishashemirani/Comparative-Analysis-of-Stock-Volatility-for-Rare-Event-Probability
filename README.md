@@ -206,7 +206,7 @@ Below are the **predicted log-volatility $\( \log h_t \)$** plots for **Bitcoin*
 
 ## Stability Parameter Estimates
 
-The **stability parameter \( \alpha \)** reflects how “fat” the tails of the **alpha-stable distribution** are. A lower value of $\( \alpha \)$ corresponds to **heavier tails**, indicating a higher likelihood of **extreme events** (e.g., sudden crashes or spikes).
+The **stability parameter $\( \alpha \)$** reflects how “fat” the tails of the **alpha-stable distribution** are. A lower value of $\( \alpha \)$ corresponds to **heavier tails**, indicating a higher likelihood of **extreme events** (e.g., sudden crashes or spikes).
 
 Below is a table summarizing the estimated stability parameters and their uncertainties:
 
