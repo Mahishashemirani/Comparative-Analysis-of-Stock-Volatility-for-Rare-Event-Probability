@@ -91,7 +91,7 @@ By visually comparing the two distributions:
 - **Bitcoin** shows significantly fatter tails, reinforcing the need for non-Gaussian models like the alpha-stable distribution.
 - **Gold** has thinner tails, meaning rare events are less likely, which aligns with its role as a stable asset in the financial markets.
 
-These plots support the quantitative comparison of the **stability parameters (α)** in the next section, where we fit alpha-stable distributions to the log-returns of both assets.
+These plots support the quantitative comparison of the **stability parameters (α)** in the next section, where I fit alpha-stable distributions to the log-returns of both assets.
 ## Mathematical Framework
 
 In this analysis, the **log-returns** of Bitcoin and Gold prices are modeled using the following equations:
@@ -162,7 +162,7 @@ Reparameterizing the stable distribution makes the model more computationally ef
 ---
 ## Visualization of Training Procedure
 
-To better understand how the model learns the **log-volatility $(log \(h_t\)$)** over time, we created an **animated GIF**. This animation shows the evolution of the **log-volatility estimates** per epoch along with their **confidence intervals** and compares it to the actual log-returns.
+To better understand how the model learns the **log-volatility $(log \(h_t\)$)** over time, I created an **animated GIF**. This animation shows the evolution of the **log-volatility estimates** per epoch along with their **confidence intervals** and compares it to the actual log-returns.
 
 ### Description of the Visualization
 
