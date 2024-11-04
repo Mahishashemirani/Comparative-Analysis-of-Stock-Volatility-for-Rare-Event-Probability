@@ -11,9 +11,9 @@ By examining the **tail properties** of the fitted alpha-stable distributions, w
 
 ## What is an Alpha-Stable Distribution?
 
-The **alpha-stable distribution** generalizes the Gaussian distribution, allowing for **skewness** and **heavy tails**. It is widely used in finance to model returns that deviate from the assumptions of normality (such as **fat tails** and **asymmetric behavior**). 
+The [**alpha-stable distribution**](https://en.wikipedia.org/wiki/Stable_distribution) generalizes the Gaussian distribution, allowing for **skewness** and **heavy tails**. It is widely used in finance to model returns that deviate from the assumptions of normality (such as **fat tails** and **asymmetric behavior**). 
 
-Unlike a normal distribution, the alpha-stable distribution can capture **extreme events** with higher probability, which makes it suitable for modeling financial time series prone to **black swan events**.
+Unlike a normal distribution, the alpha-stable distribution can capture **extreme events** with higher probability, which makes it suitable for modeling financial time series prone to [**black swan events**](https://en.wikipedia.org/wiki/Black_swan_theory#:~:text=The%20black%20swan%20theory%20or,black%20swans%20did%20not%20exist.).
 
 The key parameters of the alpha-stable distribution are:
 - **α (alpha)**: Stability parameter (0 < α ≤ 2). Lower values indicate **heavier tails** (higher chance of rare events).
@@ -110,7 +110,7 @@ $\log h_t = \log h_{t-1} + \sigma \cdot v_t$
    - $\(\sqrt{h_t}\)$ accounts for **stochastic volatility**. This introduces randomness, meaning price changes are influenced by the **current level of volatility**.
 
 2. **Second Equation**:  
-   The second equation models the **evolution of volatility over time**, capturing **volatility clustering** (i.e., periods of high volatility followed by more high volatility).  
+   The second equation models the **evolution of volatility over time**, capturing [**volatility clustering**](https://en.wikipedia.org/wiki/Volatility_clustering#:~:text=In%20finance%2C%20volatility%20clustering%20refers,be%20followed%20by%20small%20changes.%22) (i.e., periods of high volatility followed by more high volatility).  
    - $\(\log h_t\)$ is the log-volatility at time \(t\).  
    - $\(\log h_{t-1}\)$ is the log-volatility at time \(t-1\).  
    - $\(v_t\)$ is a **stochastic term** representing the shocks to volatility.  
@@ -140,7 +140,7 @@ The goal of our analysis is to **infer these parameters** from the log-returns u
 
 ### SVI and ELBO Optimization
 
-In Bayesian inference, **maximizing the ELBO** allows us to estimate the posterior distribution of the parameters efficiently. SVI is chosen for this task because it scales well with large datasets like financial time series.
+In Bayesian inference, [**maximizing the ELBO**](https://en.wikipedia.org/wiki/Evidence_lower_bound) allows us to estimate the posterior distribution of the parameters efficiently. SVI is chosen for this task because it scales well with large datasets like financial time series.
 
 The following plot shows the convergence of the ELBO during training, indicating that the model successfully learned the parameters:
 
